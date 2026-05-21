@@ -5,21 +5,21 @@
 class DockerUse < Formula
   desc "CLI to manage multiple Docker Hub accounts"
   homepage "https://github.com/chiragagg5k/docker-use"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ChiragAgg5k/docker-use/releases/download/v0.1.1/docker-use_0.1.1_darwin_x86_64.tar.gz"
-      sha256 "849a142bec78a34cb361e03c525f7b7994efde3cbd2a53435fb4dcc7d990fc0b"
+      url "https://github.com/ChiragAgg5k/docker-use/releases/download/v0.1.2/docker-use_0.1.2_darwin_x86_64.tar.gz"
+      sha256 "28011a4b58f3b2f92b4f81cb1c1786478adf6b5256a0fe50c56181d96542d193"
 
       define_method(:install) do
         bin.install "docker-use"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ChiragAgg5k/docker-use/releases/download/v0.1.1/docker-use_0.1.1_darwin_arm64.tar.gz"
-      sha256 "99230518bf6be4bbcfb3279b321f8d68c1328709facf12625f04aaf9568c1539"
+      url "https://github.com/ChiragAgg5k/docker-use/releases/download/v0.1.2/docker-use_0.1.2_darwin_arm64.tar.gz"
+      sha256 "3005041a9dddcc492396d4a163f721383ba322239c397a0cefc0332e2172f4bb"
 
       define_method(:install) do
         bin.install "docker-use"
@@ -29,15 +29,15 @@ class DockerUse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ChiragAgg5k/docker-use/releases/download/v0.1.1/docker-use_0.1.1_linux_x86_64.tar.gz"
-      sha256 "c22cbdc57b2172082a1300bd699740d3124b6bb2c9e6a833f17a0130a3650885"
+      url "https://github.com/ChiragAgg5k/docker-use/releases/download/v0.1.2/docker-use_0.1.2_linux_x86_64.tar.gz"
+      sha256 "f323bab1fdeaedb1fa73544a8d2f9516442aa793da00e411b51537696bef6b19"
       define_method(:install) do
         bin.install "docker-use"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ChiragAgg5k/docker-use/releases/download/v0.1.1/docker-use_0.1.1_linux_arm64.tar.gz"
-      sha256 "78747aadb66cc39c5f8dcc05aa6c477998a1799cc01c1f1478b282c3e919b4e9"
+      url "https://github.com/ChiragAgg5k/docker-use/releases/download/v0.1.2/docker-use_0.1.2_linux_arm64.tar.gz"
+      sha256 "36e743f0e699bdb9868673763c1fdd63b2bb1c50051484f9ba9a6fcf5d57fc19"
       define_method(:install) do
         bin.install "docker-use"
       end
